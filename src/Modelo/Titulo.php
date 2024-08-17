@@ -54,7 +54,7 @@ class Titulo{
      */
     public function bom(): string
     {
-        return $this->media() >= self::$notaMinima ? 'Sim' : 'Não';
+        return $this->media() >= self::$notaMinima ? 'Sim' : 'NÃ£o';
     }
 
     /**
@@ -80,6 +80,11 @@ class Titulo{
 
         return $this->genero;
     }
+    
+    public function duracaoEmMinutos():int{
+
+        return 0;
+    }
 
     /**
      * @return string
@@ -89,8 +94,8 @@ class Titulo{
         return 
             "Nome: ". $this->getNome().
             " - Ano: ".$this->getAnoLancamento().
-            " - Gênero: ".$this->getGenero()->toString().
-            " - Média: ".$this->media().
+            " - GÃªnero: ".$this->getGenero()->toString().
+            " - MÃ©dia: ".$this->media().
             " - Recomenda? ".$this->bom();
     }
 }

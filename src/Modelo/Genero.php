@@ -1,10 +1,10 @@
 <?php
 
 enum Genero: string{
-    case Acao = 'Ação';
-    case Comedia = 'Comédia';
+    case Acao = 'AÃ§Ã£o';
+    case Comedia = 'ComÃ©dia';
     case Terror = 'Terror';
-    case SuperHeroi = 'Super Heroi';
+    case SuperHeroi = 'Super HerÃ³i';
 
     /**
      * @return string

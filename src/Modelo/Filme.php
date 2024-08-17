@@ -17,10 +17,7 @@ class Filme extends Titulo{
         $this->duracaoEmMinutos = $duracaoEmMinutos;
     }
 
-    /**
-     * @return int
-     */
-    public function getDuracaoEmMinutos():int{
+    public function duracaoEmMinutos():int{
 
         return $this->duracaoEmMinutos;
     }
@@ -30,7 +27,7 @@ class Filme extends Titulo{
      */
     public function __tostring():string{
 
-        return parent::__tostring() . " - Duração: " . $this->getDuracaoEmMinutos();
+        return parent::__tostring() . " - DuraÃ§Ã£o (min.): " . $this->duracaoEmMinutos();
     }
     
 }
